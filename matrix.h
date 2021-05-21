@@ -179,7 +179,7 @@ matrix<T>::matrix(int r, int c)
 template<typename T>
 matrix<T>::matrix(const matrix<T>& matr)
 {
-    assert(mart.rows != 0 && matr.cols != 0);
+    assert(matr.rows != 0 && matr.cols != 0);
 	rows = matr.rows;
 	cols = matr.cols;
 	this->mtr = new T * [rows];
@@ -195,7 +195,7 @@ matrix<T>::matrix(const matrix<T>& matr)
 template<typename T>
 matrix<T>::matrix(matrix<T>&& matr)
 {
-    assert(mart.rows != 0 && matr.cols != 0);
+    assert(matr.rows != 0 && matr.cols != 0);
 	rows = matr.rows;
 	cols = matr.cols;
 	mtr = new T * [rows];
